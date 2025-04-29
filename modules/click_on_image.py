@@ -19,8 +19,11 @@ def hover(image: str, region: tuple = SCREEN, duration: float = 0.25, acc: float
     x1, y1, x2, y2 = find_image(image, region, acc=acc)
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
 
-def lclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, acc: float = 0.8):
-    x1, y1, x2, y2 = find_image(image, region, acc=acc)
+def lclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, acc: float = 0.8, use_color = False):
+    if use_color:
+        x1, y1, x2, y2 = find_image(image, region, acc=acc, use_color = True)
+    else:
+        x1, y1, x2, y2 = find_image(image, region, acc=acc)
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
     time.sleep(0.05)
     click()

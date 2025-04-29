@@ -1,12 +1,9 @@
 import time
 import matplotlib.pyplot as plt
-import cv2
 import numpy as np
-from PIL.ImagePalette import random
 from config import TARGETS_REGION
 from modules.find_image import make_screenshot
 import datetime
-import os
 from PIL import Image, ImageDraw
 
 
@@ -41,7 +38,7 @@ def count_targets(current_count = 0):
         image_path,
         rectangles,
         threshold=30,
-        visualize=True,
+        visualize=False,
         output_path="targets_detection/",
         sample_rate=8  # берем каждый 8-oй пиксель для ускорения
     )
