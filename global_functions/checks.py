@@ -1,14 +1,25 @@
 import time
+from api_reader import get_eve_module_quantity
 import matplotlib.pyplot as plt
 import numpy as np
 from config import TARGETS_REGION
 from modules.find_image import make_screenshot
 import datetime
 from PIL import Image, ImageDraw
-
+from get_pid import get_pid
 
 def check_guns():
-    return True
+    pid = get_pid()
+    count = get_eve_module_quantity(pid)
+    time.sleep(3)
+    if get_eve_module_quantity(pid) < count:
+        return True
+    else:
+        time.sleep(2)
+        if get_eve_module_quantity(pid) >= count:
+            return False
+
+
 
 
 def count_targets(current_count = 0):

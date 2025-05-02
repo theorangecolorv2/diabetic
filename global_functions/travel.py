@@ -1,7 +1,13 @@
 import time
 from modules.click_on_image import lclick_on_image, rclick_coords
-from config import GLOBAL_ASSETS
+from config import GLOBAL_ASSETS, LOGS_PATH
 from modules.find_image import wait, find_image, exists
+from logging import basicConfig, info, INFO
+
+basicConfig(level=INFO,
+            filename=LOGS_PATH,
+            filemode="w",
+            format="%(asctime)s %(levelname)s %(message)s")
 
 
 def travel():
@@ -21,6 +27,12 @@ def travel():
         time.sleep(2)
 
     lclick_on_image(GLOBAL_ASSETS + "warp_to_location.png")
+    info("warping to mission location")
 
 def back():
-    pass
+    if exists(GLOBAL_ASSETS + "mission_completed.png"): #no img
+        pass
+    else:
+        info("mission not completed or have no image!")
+        return 0
+

@@ -50,15 +50,19 @@ def kill_bs():
 def shoot_all():
     while count_targets() > 0:
         count = count_targets()
-        print(count)
-        print("стреляем")
         time.sleep(3.5)
         pyautogui.press("1")
         pyautogui.press("f")
         if not check_guns():
-            keyboard.send("1")
+            pyautogui.press("1")
+        cycles = 0
         while count_targets(current_count=count) >= count:
             time.sleep(1)
+            cycles += 1
+            if cycles > 40 and not check_guns():
+                pyautogui.press("1")
+                pyautogui.press("f")
+                cycles = 0
 
 
 def lock_all(overview: str = "all"):
