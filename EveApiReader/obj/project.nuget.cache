@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "7snd0EmkNtc=",
+  "success": true,
+  "projectFilePath": "D:\\EveApiReader\\EveApiReader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\theorr\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.4\\microsoft.extensions.fileproviders.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\theorr\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\9.0.4\\microsoft.extensions.fileproviders.embedded.9.0.4.nupkg.sha512",
+    "C:\\Users\\theorr\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.4\\microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "C:\\Users\\theorr\\.nuget\\packages\\pine\\0.4.4\\pine.0.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}

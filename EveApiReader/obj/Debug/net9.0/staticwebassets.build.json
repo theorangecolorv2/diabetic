@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lEMJmnWnFsFIBNLBYJH1dTL31/bFkj3m2MBSOf7PYCo=",
+  "Source": "EveApiReader",
+  "BasePath": "_content/EveApiReader",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
