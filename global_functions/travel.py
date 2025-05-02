@@ -1,8 +1,10 @@
 import time
-from modules.click_on_image import lclick_on_image, rclick_coords
+from global_functions.get_pid import get_pid
+from modules.click_on_image import lclick_on_image, rclick_coords, click_here
 from config import GLOBAL_ASSETS, LOGS_PATH
 from modules.find_image import wait, find_image, exists
 from logging import basicConfig, info, INFO
+from api_reader import get_eve_module_quantity
 
 basicConfig(level=INFO,
             filename=LOGS_PATH,
@@ -17,7 +19,12 @@ def travel():
     lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
     time.sleep(1.5)
     lclick_on_image(GLOBAL_ASSETS + "jump_over.png")
-    time.sleep(1)
+    time.sleep(0.5)
+    click_here()
+
+    # инициализируем апи ридер еще раз (поинтер на ячейку память мог поменяться после дока/андока
+    test_quantity = get_eve_module_quantity(get_pid())
+    info(f"проинициализировали чтение памяти, получили тестовое значение {test_quantity}")
 
     while not exists(GLOBAL_ASSETS + "warp_to_location.png"):
         lclick_on_image(GLOBAL_ASSETS + "gate_yellow.png", use_color=True)

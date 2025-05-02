@@ -8,13 +8,12 @@ def main():
     count = 0
 
     print("инициализирум и проверяем веб-сервер")
-    if ping() != 200:
+    if not ping():
         print(f"сервер лежит, код: {ping()}")
         return Exception("сервер лежит ")
     else:
         print("сервер работает")
 
-    get_eve_module_quantity(get_pid())
 
     while working:
         choose_mission_and_run()
