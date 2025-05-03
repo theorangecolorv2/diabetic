@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EveApiReader\\EveApiReader.csproj": {}
+    "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj": {}
   },
   "projects": {
-    "D:\\EveApiReader\\EveApiReader.csproj": {
+    "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EveApiReader\\EveApiReader.csproj",
+        "projectUniqueName": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj",
         "projectName": "EveApiReader",
-        "projectPath": "D:\\EveApiReader\\EveApiReader.csproj",
+        "projectPath": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj",
         "packagesPath": "C:\\Users\\theorr\\.nuget\\packages\\",
-        "outputPath": "D:\\EveApiReader\\obj\\",
+        "outputPath": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

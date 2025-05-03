@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7snd0EmkNtc=",
+  "dgSpecHash": "XgAEVxL147E=",
   "success": true,
-  "projectFilePath": "D:\\EveApiReader\\EveApiReader.csproj",
+  "projectFilePath": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theorr\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.4\\microsoft.extensions.fileproviders.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\theorr\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\9.0.4\\microsoft.extensions.fileproviders.embedded.9.0.4.nupkg.sha512",

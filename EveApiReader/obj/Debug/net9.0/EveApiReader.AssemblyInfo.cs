@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EveApiReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e6a21d3259661b90a7223a2b12a967a44d269e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("EveApiReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EveApiReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,12 +1,16 @@
 import time
-from api_reader import get_eve_module_quantity
+
+import cv2
+from matplotlib.pyplot import imshow
+
+from global_functions.api_reader import get_eve_module_quantity
 import matplotlib.pyplot as plt
 import numpy as np
-from config import TARGETS_REGION
-from modules.find_image import make_screenshot
+from config import TARGETS_REGION, GLOBAL_ASSETS
+from modules.find_image import make_screenshot, find_image, get_green_pixel_ratio
 import datetime
 from PIL import Image, ImageDraw
-from get_pid import get_pid
+from global_functions.get_pid import get_pid
 
 def check_guns():
     pid = get_pid()
@@ -18,6 +22,20 @@ def check_guns():
         time.sleep(2)
         if get_eve_module_quantity(pid) >= count:
             return False
+
+def check_guns_cv():
+    _c = find_image(GLOBAL_ASSETS + "ungroup.png", acc=0.9)
+    x1, y1, x2, y2 = _c
+    ratios = []
+    for i in range(5):
+        scr = make_screenshot(region=(int(x1) + 22, int(y1) - 4, 66, 66))
+        ratios.append(get_green_pixel_ratio(scr))
+        time.sleep(0.2)
+    if (max(ratios) + 0.0001)/(min(ratios) + 0.0001) >= 2:
+        return True
+    else:
+        return False
+
 
 
 

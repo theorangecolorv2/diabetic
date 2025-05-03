@@ -1270,7 +1270,7 @@ public static class EveModuleReader
 
     // TODO: Убедитесь, что эти имена соответствуют данным в UI-дереве EVE (например, через JSON-файл).
     // Имя слота, в котором находится нужный ModuleButton
-    public const string TargetSlotName = "inFlightHighSlot1"; 
+    public const string TargetSlotName = "inFlightHighSlot1";
     // Имя поля в словаре ModuleButton, значение которого нужно прочитать
     public const string TargetQuantityField = "quantity";
 
@@ -1307,8 +1307,8 @@ public static class EveModuleReader
             // Добавляем обработку для double, так как quantity может читаться как float
             if (quantityValue is double doubleQuantity)
             {
-                 // Преобразуем в long, отбрасывая дробную часть
-                 return (long)doubleQuantity;
+                // Преобразуем в long, отбрасывая дробную часть
+                return (long)doubleQuantity;
             }
 
             // Логируем неожиданный тип, но не прерываем работу.
@@ -1317,22 +1317,22 @@ public static class EveModuleReader
         }
         catch (ObjectDisposedException)
         {
-             Console.WriteLine($"[EveModuleReader] Кэш для PID {processId} был освобожден.");
-             RemoveCache(processId); // Удаляем недействительный кэш
-             return null;
+            Console.WriteLine($"[EveModuleReader] Кэш для PID {processId} был освобожден.");
+            RemoveCache(processId); // Удаляем недействительный кэш
+            return null;
         }
         catch (InvalidOperationException ex)
         {
-             // Происходит, если CheckModuleState вызван до успешной инициализации Initialize.
-             Console.WriteLine($"[EveModuleReader] Ошибка чтения состояния для PID {processId}: {ex.Message}");
-             return null;
+            // Происходит, если CheckModuleState вызван до успешной инициализации Initialize.
+            Console.WriteLine($"[EveModuleReader] Ошибка чтения состояния для PID {processId}: {ex.Message}");
+            return null;
         }
         catch (Exception ex) // Другие ошибки чтения памяти
         {
-             Console.WriteLine($"[EveModuleReader] Непредвиденная ошибка чтения состояния для PID {processId}: {ex.Message}");
-             // Возможно, стоит удалить кэш, если он в плохом состоянии
-             RemoveCache(processId);
-             return null;
+            Console.WriteLine($"[EveModuleReader] Непредвиденная ошибка чтения состояния для PID {processId}: {ex.Message}");
+            // Возможно, стоит удалить кэш, если он в плохом состоянии
+            RemoveCache(processId);
+            return null;
         }
     }
 
@@ -1361,67 +1361,67 @@ public static class EveModuleReader
             }
             catch (InvalidOperationException ex) // Ошибка поиска узла/поля
             {
-                 Console.WriteLine($"[EveModuleReader] Не удалось инициализировать кэш для слота '{TargetSlotName}' (PID {processId}): {ex.Message}");
-                 return null;
+                Console.WriteLine($"[EveModuleReader] Не удалось инициализировать кэш для слота '{TargetSlotName}' (PID {processId}): {ex.Message}");
+                return null;
             }
             catch (Exception ex) // Другие ошибки (например, процесс не найден, нет доступа)
             {
-                 Console.WriteLine($"[EveModuleReader] Непредвиденная ошибка при инициализации кэша для PID {processId}: {ex.Message}");
-                 return null;
+                Console.WriteLine($"[EveModuleReader] Непредвиденная ошибка при инициализации кэша для PID {processId}: {ex.Message}");
+                return null;
             }
         }
     }
 
-     /// <summary>
-     /// Безопасно удаляет и освобождает кэш для указанного PID.
-     /// </summary>
-     private static void RemoveCache(int processId)
-     {
-           lock(_lock)
-           {
-               if (_caches.TryGetValue(processId, out var cache))
-               {
-                   try
-                   {
-                       cache.Dispose(); // Освобождаем ресурсы перед удалением
-                   }
-                   catch(Exception ex)
-                   {
-                        Console.WriteLine($"[EveModuleReader] Ошибка при освобождении кэша для PID {processId}: {ex.Message}");
-                   }
-                   _caches.Remove(processId);
-               }
-           }
-     }
+    /// <summary>
+    /// Безопасно удаляет и освобождает кэш для указанного PID.
+    /// </summary>
+    private static void RemoveCache(int processId)
+    {
+        lock (_lock)
+        {
+            if (_caches.TryGetValue(processId, out var cache))
+            {
+                try
+                {
+                    cache.Dispose(); // Освобождаем ресурсы перед удалением
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[EveModuleReader] Ошибка при освобождении кэша для PID {processId}: {ex.Message}");
+                }
+                _caches.Remove(processId);
+            }
+        }
+    }
 
-     /// <summary>
-     /// Освобождает ресурсы, удерживаемые кэшем для конкретного PID.
-     /// </summary>
-     public static void DisposeCache(int processId)
-     {
-         RemoveCache(processId);
-         Console.WriteLine($"[EveModuleReader] Кэш для PID {processId} освобожден.");
-     }
+    /// <summary>
+    /// Освобождает ресурсы, удерживаемые кэшем для конкретного PID.
+    /// </summary>
+    public static void DisposeCache(int processId)
+    {
+        RemoveCache(processId);
+        Console.WriteLine($"[EveModuleReader] Кэш для PID {processId} освобожден.");
+    }
 
-     /// <summary>
-     /// Освобождает ресурсы, удерживаемые всеми активными кэшами.
-     /// Вызывать при завершении работы приложения.
-     /// </summary>
-     public static void DisposeAllCaches()
-     {
-         lock (_lock)
-         {
-              Console.WriteLine($"[EveModuleReader] Освобождение всех кэшей...");
-             // Копируем ключи, чтобы избежать изменения коллекции во время итерации
-             var processIds = _caches.Keys.ToList();
-              foreach (var pid in processIds)
-              {
-                  RemoveCache(pid); // Используем RemoveCache для корректного освобождения
-              }
-             _caches.Clear(); // На всякий случай очищаем словарь
-              Console.WriteLine($"[EveModuleReader] Все кэши освобождены.");
-         }
-     }
+    /// <summary>
+    /// Освобождает ресурсы, удерживаемые всеми активными кэшами.
+    /// Вызывать при завершении работы приложения.
+    /// </summary>
+    public static void DisposeAllCaches()
+    {
+        lock (_lock)
+        {
+            Console.WriteLine($"[EveModuleReader] Освобождение всех кэшей...");
+            // Копируем ключи, чтобы избежать изменения коллекции во время итерации
+            var processIds = _caches.Keys.ToList();
+            foreach (var pid in processIds)
+            {
+                RemoveCache(pid); // Используем RemoveCache для корректного освобождения
+            }
+            _caches.Clear(); // На всякий случай очищаем словарь
+            Console.WriteLine($"[EveModuleReader] Все кэши освобождены.");
+        }
+    }
 }
 
 public class ModuleStateCache : IDisposable
@@ -1429,7 +1429,7 @@ public class ModuleStateCache : IDisposable
     private readonly string moduleName;
     private readonly string stateFieldKey;
     private MemoryReaderFromLiveProcess memoryReader;
-    private ulong cachedModuleDictAddress; // Кэшируем адрес словаря модуля
+    private ulong cachedModuleButtonAddress; // Кэшируем адрес объекта ModuleButton
     private bool initialized;
     private readonly string targetSlotName; // Добавляем поле для имени слота
 
@@ -1460,32 +1460,36 @@ public class ModuleStateCache : IDisposable
             var moduleNode = FindModuleInSlot(tree, this.targetSlotName);
             if (moduleNode != null)
             {
-                 // Убедимся, что у найденного узла есть словарь
-                 if (!moduleNode.dictEntriesOfInterest.Any())
-                 {
-                       throw new InvalidOperationException($"Найденный узел ModuleButton в слоте '{targetSlotName}' не содержит словаря dictEntriesOfInterest.");
-                 }
+                // Убедимся, что у найденного узла есть словарь
+                if (!moduleNode.dictEntriesOfInterest.Any())
+                {
+                    throw new InvalidOperationException($"Найденный узел ModuleButton в слоте '{targetSlotName}' не содержит словаря dictEntriesOfInterest.");
+                }
 
-                 // Получаем адрес словаря (dict) из найденного узла ModuleButton
-                 // Python-объект (ModuleButton) содержит указатель на словарь в поле со смещением 0x10
-                 var header = memoryReader.ReadBytes(moduleNode.pythonObjectAddress, 0x18); 
-                 if (header == null || header.Value.Length < 0x18)
-                 {
-                      throw new InvalidOperationException($"Не удалось прочитать заголовок объекта ModuleButton в слоте '{targetSlotName}'.");
-                 }
-                 cachedModuleDictAddress = BitConverter.ToUInt64(header.Value.Span.Slice(0x10, 8));
+                // Получаем адрес словаря (dict) из найденного узла ModuleButton
+                // Python-объект (ModuleButton) содержит указатель на словарь в поле со смещением 0x10
+                var header = memoryReader.ReadBytes(moduleNode.pythonObjectAddress, 0x18);
+                if (header == null || header.Value.Length < 0x18)
+                {
+                    throw new InvalidOperationException($"Не удалось прочитать заголовок объекта ModuleButton в слоте '{targetSlotName}'.");
+                }
+                //cachedModuleDictAddress = BitConverter.ToUInt64(header.Value.Span.Slice(0x10, 8)); // Больше не кэшируем адрес словаря
+                cachedModuleButtonAddress = moduleNode.pythonObjectAddress; // Кэшируем адрес самого ModuleButton
 
                 // Проверяем, что словарь доступен и содержит ключ при инициализации (однократно)
+                // Больше не требуется, так как адрес словаря получаем динамически
+                /*
                 var initialValueObj = GetValueFromDictByKey(cachedModuleDictAddress, stateFieldKey, out var initialValueAddress);
                 if (initialValueObj == null)
                  {
                       // Ошибка уже выведена в GetValueFromDictByKey или его зависимостях
                       throw new InvalidOperationException($"Не удалось получить начальное значение для '{stateFieldKey}' из словаря ModuleButton в слоте '{targetSlotName}' при инициализации.");
                  }
-                 
+                 */
+
                 // stateObjectAddress больше не сохраняем
                 initialized = true;
-                Console.WriteLine($"[ModuleStateCache] Инициализация успешна. Найден словарь 0x{cachedModuleDictAddress:X} для ModuleButton в слоте '{targetSlotName}'. Начальное значение '{stateFieldKey}': {initialValueObj}");
+                Console.WriteLine($"[ModuleStateCache] Инициализация успешна. Найден ModuleButton 0x{cachedModuleButtonAddress:X} для слота '{targetSlotName}'."); // Обновили лог
                 return;
             }
         }
@@ -1501,61 +1505,31 @@ public class ModuleStateCache : IDisposable
         if (!initialized)
             throw new InvalidOperationException("ModuleStateCache не инициализирован.");
 
-        // Получаем актуальное значение из кэшированного словаря по ключу
-        var currentValue = GetValueFromDictByKey(cachedModuleDictAddress, stateFieldKey, out var currentValueAddress);
+        // Сначала получаем актуальный адрес словаря из кэшированного ModuleButton
+        var header = memoryReader.ReadBytes(cachedModuleButtonAddress, 0x18);
+        if (header == null || header.Value.Length < 0x18)
+        {
+            Console.WriteLine($"[ModuleStateCache] Ошибка: Не удалось прочитать заголовок кэшированного ModuleButton по адресу 0x{cachedModuleButtonAddress:X}");
+            return null; // Не можем продолжить без заголовка
+        }
+        ulong currentDictionaryAddress = BitConverter.ToUInt64(header.Value.Span.Slice(0x10, 8));
+        if (currentDictionaryAddress == 0)
+        {
+            Console.WriteLine($"[ModuleStateCache] Ошибка: Адрес словаря, прочитанный из ModuleButton 0x{cachedModuleButtonAddress:X}, равен нулю.");
+            return null; // Не можем продолжить без адреса словаря
+        }
+
+        // Получаем актуальное значение из актуального словаря по ключу
+        var currentValue = GetValueFromDictByKey(currentDictionaryAddress, stateFieldKey, out var currentValueAddress);
 
         if (currentValueAddress != 0)
         {
-            // --- Отладка --- 
-            Console.WriteLine($"[Debug] Читаем ключ '{stateFieldKey}' из словаря 0x{cachedModuleDictAddress:X}. Адрес значения: 0x{currentValueAddress:X}");
-            // --------------- 
+            // --- Отладка ---
+            Console.WriteLine($"[Debug] Читаем ключ '{stateFieldKey}' из словаря 0x{currentDictionaryAddress:X}. Адрес значения: 0x{currentValueAddress:X}");
+            // ---------------
         }
 
         return currentValue;
-
-        /* Старый код:
-        // Определяем тип объекта по его адресу
-        string pythonTypeName = GetPythonTypeNameFromObjectAddress(stateObjectAddress);
-
-        if (pythonTypeName == null)
-        {
-             Console.WriteLine($"[ModuleStateCache] Не удалось определить тип объекта по адресу {stateObjectAddress:X}");
-             return null; // Не удалось определить тип
-        }
-
-        // --- Отладка --- 
-        Console.WriteLine($"[Debug] Адрес: {stateObjectAddress:X}, Определенный тип: {pythonTypeName}");
-        // --------------- 
-
-        // Используем соответствующий метод чтения в зависимости от типа
-        switch (pythonTypeName)
-        {
-            case "int":
-                var intValue = ReadPythonIntValue(stateObjectAddress);
-                // ReadPythonIntValue возвращает long?, нужно вернуть object
-                Console.WriteLine($"[Debug] Прочитано как int/long: {intValue?.ToString() ?? "null"}"); // --- Отладка ---
-                return intValue.HasValue ? (object)intValue.Value : null;
-            case "float":
-                var floatValue = EveOnline64.ReadPythonFloatObjectValue(stateObjectAddress, memoryReader);
-                 // ReadPythonFloatObjectValue возвращает double?, нужно вернуть object
-                 Console.WriteLine($"[Debug] Прочитано как float/double: {floatValue?.ToString() ?? "null"}"); // --- Отладка ---
-                return floatValue.HasValue ? (object)floatValue.Value : null;
-            case "bool":
-                 var boolValue = ReadPythonBoolValue(stateObjectAddress);
-                 // ReadPythonBoolValue возвращает bool?, нужно вернуть object
-                 Console.WriteLine($"[Debug] Прочитано как bool: {boolValue?.ToString() ?? "null"}"); // --- Отладка ---
-                 return boolValue.HasValue ? (object)boolValue.Value : null;
-            case "str":
-                var strValue = ReadPythonStringValue(stateObjectAddress, maxLength: 1024); 
-                Console.WriteLine($"[Debug] Прочитано как str: \"{strValue}\""); // --- Отладка ---
-                return strValue;
-            // Добавьте другие типы при необходимости
-            // case "unicode": ...
-            default:
-                 Console.WriteLine($"[ModuleStateCache] Неподдерживаемый тип '{pythonTypeName}' для чтения значения по адресу {stateObjectAddress:X}");
-                return null; // Неизвестный или неподдерживаемый тип
-        }
-        */
     }
 
     private UITreeNode FindModuleNode(UITreeNode root)
@@ -1575,41 +1549,105 @@ public class ModuleStateCache : IDisposable
         return null;
     }
 
-    // --- ���������� ����������� ��������� ������� ������ ������� � ���������� ---
+    // --- Вспомогательные методы для чтения типов Python ---
 
-    private struct PyDictEntry { public ulong key, value; }
-
-    private PyDictEntry[] ReadActiveDictionaryEntriesFromDictionaryAddress(ulong dictAddr)
+    private string GetPythonTypeNameFromObjectAddress(ulong objectAddress)
     {
-        //  dict (0x30 )
-        var dictMem = memoryReader.ReadBytes(dictAddr, 0x30);
-        if (dictMem == null)
-            return Array.Empty<PyDictEntry>();
+        // Читаем заголовок объекта (первые 16 байт), чтобы получить адрес объекта-типа
+        var objectMemory = memoryReader?.ReadBytes(objectAddress, 0x10);
+        if (!(objectMemory?.Length == 0x10))
+            return null; // Не удалось прочитать память объекта
 
-        //  ReadOnlyMemory<byte>?  ReadOnlySpan<ulong>
-        var longs = MemoryMarshal.Cast<byte, ulong>(dictMem.Value.Span);
+        // Адрес объекта-типа находится со смещением 8 (PyObject.Offset_ob_type)
+        var typeObjectAddress = BitConverter.ToUInt64(objectMemory.Value.Span[8..]);
 
-        int mask = (int)longs[4];
-        ulong table = longs[5];
-        int slots = mask + 1;
+        return GetPythonTypeNameFromTypeObjectAddress(typeObjectAddress);
+    }
 
-        // 
-        var slotsMem = memoryReader.ReadBytes(table, slots * 24);
-        if (slotsMem == null)
-            return Array.Empty<PyDictEntry>();
+    private string GetPythonTypeNameFromTypeObjectAddress(ulong typeObjectAddress)
+    {
+        // Читаем заголовок объекта-типа (первые 32 байта), чтобы получить адрес tp_name
+        var typeObjectMemory = memoryReader?.ReadBytes(typeObjectAddress, 0x20);
+        if (!(typeObjectMemory?.Length == 0x20))
+            return null; // Не удалось прочитать память объекта-типа
 
-        var span = MemoryMarshal.Cast<byte, ulong>(slotsMem.Value.Span);
-        var list = new List<PyDictEntry>();
+        // Адрес строки с именем типа (tp_name) находится со смещением 0x18 (24)
+        var tp_name_address = BitConverter.ToUInt64(typeObjectMemory.Value.Span[0x18..]);
 
-        for (int i = 0; i < slots; i++)
+        // Читаем строку имени типа (ограничиваем длину для безопасности)
+        var nameBytes = memoryReader?.ReadBytes(tp_name_address, 100)?.ToArray();
+        if (!(nameBytes?.Contains((byte)0) ?? false))
+            return null; // Строка не прочитана или не содержит нуль-терминатор
+
+        return System.Text.Encoding.ASCII.GetString(nameBytes.TakeWhile(character => character != 0).ToArray());
+    }
+
+    /// <summary>
+    /// Gets the value object for a given key within a Python dictionary object.
+    /// Reads the dictionary entries, finds the key, determines the value's type, and reads the value.
+    /// </summary>
+    /// <param name="dictionaryAddress">Address of the Python dictionary object.</param>
+    /// <param name="keyToFind">The string key to search for.</param>
+    /// <param name="valueAddress">Outputs the address of the found value object.</param>
+    /// <returns>The read value as an object, or null if not found or error occurred.</returns>
+    private object GetValueFromDictByKey(ulong dictionaryAddress, string keyToFind, out ulong valueAddress)
+    {
+        valueAddress = 0;
+        var dictEntries = ReadActiveDictionaryEntriesFromDictionaryAddress(dictionaryAddress);
+        if (dictEntries == null)
         {
-            ulong k = span[i * 3 + 1];
-            ulong v = span[i * 3 + 2];
-            if (k != 0 && v != 0)
-                list.Add(new PyDictEntry { key = k, value = v });
+            Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Не удалось прочитать записи словаря по адресу 0x{dictionaryAddress:X}");
+            return null;
         }
 
-        return list.ToArray();
+        // Ищем запись по ключу. Ключ должен быть строкой ('str').
+        var targetEntry = dictEntries
+             .Select(e => new { KeyObj = e.key, ValueObj = e.value, KeyString = ReadPythonStringValue(e.key, 128) })
+             .FirstOrDefault(e => e.KeyString == keyToFind);
+
+        if (targetEntry == null || targetEntry.ValueObj == 0)
+        {
+            // Собираем доступные ключи для сообщения об ошибке
+            var availableKeys = string.Join(", ", dictEntries.Select(e => ReadPythonStringValue(e.key, 128) ?? "<err>"));
+            Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Ключ '{keyToFind}' не найден в словаре 0x{dictionaryAddress:X}. Доступные ключи: [{availableKeys}]");
+            return null;
+        }
+
+        valueAddress = targetEntry.ValueObj;
+
+        // Определяем тип объекта значения
+        string pythonTypeName = GetPythonTypeNameFromObjectAddress(valueAddress);
+        if (pythonTypeName == null)
+        {
+            Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Не удалось определить тип объекта значения по адресу {valueAddress:X} для ключа '{keyToFind}'.");
+            return null;
+        }
+
+        // --- Отладка (опционально, можно убрать для производительности) ---
+        // Console.WriteLine($"[Debug][GetValue] Адрес значения: {valueAddress:X}, Тип: {pythonTypeName}");
+        // -----------
+
+        // Читаем значение на основе типа
+        switch (pythonTypeName)
+        {
+            case "int":
+                var intValue = ReadPythonIntValue(valueAddress);
+                return intValue.HasValue ? (object)intValue.Value : null;
+            case "float":
+                var floatValue = EveOnline64.ReadPythonFloatObjectValue(valueAddress, memoryReader);
+                return floatValue.HasValue ? (object)floatValue.Value : null;
+            case "bool":
+                var boolValue = ReadPythonBoolValue(valueAddress);
+                return boolValue.HasValue ? (object)boolValue.Value : null;
+            case "str":
+                return ReadPythonStringValue(valueAddress, maxLength: 1024);
+            // Добавьте другие типы, если необходимо
+            // case "instance": // Может быть полезно вернуть адрес для дальнейшего разбора
+            //     return valueAddress;
+            default:
+                Console.WriteLine($"[GetValueFromDictByKey] Предупреждение: Неподдерживаемый тип '{pythonTypeName}' для чтения значения ключа '{keyToFind}' по адресу {valueAddress:X}. Возвращаем адрес.");
+                return valueAddress; // Возвращаем сам адрес как fallback
+        }
     }
 
     private long? ReadPythonIntValue(ulong addr)
@@ -1630,11 +1668,6 @@ public class ModuleStateCache : IDisposable
         return BitConverter.ToInt64(mem.Value.Span.Slice(0x10, 8)) != 0;
     }
 
-    public string ReadPythonStringValue(ulong addr, int maxLength)
-    {
-        return EveOnline64.ReadPythonStringValue(addr, memoryReader, maxLength);
-    }
-
     public void Dispose()
     {
         memoryReader?.Dispose();
@@ -1648,8 +1681,8 @@ public class ModuleStateCache : IDisposable
         if (node == null) return null;
 
         // Проверяем, является ли текущий узел искомым ShipSlot
-        if (node.pythonObjectTypeName == "ShipSlot" && 
-            node.dictEntriesOfInterest.TryGetValue("_name", out var nameObj) && 
+        if (node.pythonObjectTypeName == "ShipSlot" &&
+            node.dictEntriesOfInterest.TryGetValue("_name", out var nameObj) &&
             nameObj is string nameStr && nameStr == slotName)
         {
             // Если это нужный слот, ищем ModuleButton среди его прямых потомков
@@ -1663,13 +1696,13 @@ public class ModuleStateCache : IDisposable
                     }
                 }
             }
-             // ModuleButton не найден как прямой потомок слота (маловероятно, но возможно)
-             return null; 
+            // ModuleButton не найден как прямой потомок слота (маловероятно, но возможно)
+            return null;
         }
 
         // Если текущий узел не искомый ShipSlot, рекурсивно ищем в потомках
         if (node.children != null)
-        { 
+        {
             foreach (var child in node.children)
             {
                 var found = FindModuleInSlot(child, slotName);
@@ -1680,104 +1713,44 @@ public class ModuleStateCache : IDisposable
         return null; // Не нашли ни в текущем узле, ни в потомках
     }
 
-    // --- Вспомогательные методы для чтения типов Python ---
+    private struct PyDictEntry { public ulong key, value; }
 
-    private string GetPythonTypeNameFromObjectAddress(ulong objectAddress)
+    private PyDictEntry[] ReadActiveDictionaryEntriesFromDictionaryAddress(ulong dictAddr)
     {
-        // Читаем заголовок объекта (первые 16 байт), чтобы получить адрес объекта-типа
-        var objectMemory = memoryReader?.ReadBytes(objectAddress, 0x10);
-        if (!(objectMemory?.Length == 0x10))
-            return null; // Не удалось прочитать память объекта
+        // Читаем заголовок словаря (первые 0x30 байт)
+        var dictMem = memoryReader.ReadBytes(dictAddr, 0x30);
+        if (dictMem == null)
+            return Array.Empty<PyDictEntry>();
 
-        // Адрес объекта-типа находится со смещением 8 (PyObject.Offset_ob_type)
-        var typeObjectAddress = BitConverter.ToUInt64(objectMemory.Value.Span[8..]);
-        
-        return GetPythonTypeNameFromTypeObjectAddress(typeObjectAddress);
+        // Преобразуем ReadOnlyMemory<byte>? в ReadOnlySpan<ulong>
+        var longs = MemoryMarshal.Cast<byte, ulong>(dictMem.Value.Span);
+
+        int mask = (int)longs[4];
+        ulong table = longs[5];
+        int slots = mask + 1;
+
+        // Читаем таблицу слотов
+        var slotsMem = memoryReader.ReadBytes(table, slots * 24); // Каждый слот 3 * ulong = 24 байта
+        if (slotsMem == null)
+            return Array.Empty<PyDictEntry>();
+
+        var span = MemoryMarshal.Cast<byte, ulong>(slotsMem.Value.Span);
+        var list = new List<PyDictEntry>();
+
+        for (int i = 0; i < slots; i++)
+        {
+            ulong k = span[i * 3 + 1]; // key
+            ulong v = span[i * 3 + 2]; // value
+            if (k != 0 && v != 0) // Пропускаем пустые и удаленные слоты
+                list.Add(new PyDictEntry { key = k, value = v });
+        }
+
+        return list.ToArray();
     }
 
-     private string GetPythonTypeNameFromTypeObjectAddress(ulong typeObjectAddress)
-     {
-           // Читаем заголовок объекта-типа (первые 32 байта), чтобы получить адрес tp_name
-          var typeObjectMemory = memoryReader?.ReadBytes(typeObjectAddress, 0x20);
-          if (!(typeObjectMemory?.Length == 0x20))
-               return null; // Не удалось прочитать память объекта-типа
-
-          // Адрес строки с именем типа (tp_name) находится со смещением 0x18 (24)
-          var tp_name_address = BitConverter.ToUInt64(typeObjectMemory.Value.Span[0x18..]);
-
-           // Читаем строку имени типа (ограничиваем длину для безопасности)
-          var nameBytes = memoryReader?.ReadBytes(tp_name_address, 100)?.ToArray();
-          if (!(nameBytes?.Contains((byte)0) ?? false))
-               return null; // Строка не прочитана или не содержит нуль-терминатор
-
-          return System.Text.Encoding.ASCII.GetString(nameBytes.TakeWhile(character => character != 0).ToArray());
-     }
-
-    /// <summary>
-    /// Gets the value object for a given key within a Python dictionary object.
-    /// Reads the dictionary entries, finds the key, determines the value's type, and reads the value.
-    /// </summary>
-    /// <param name="dictionaryAddress">Address of the Python dictionary object.</param>
-    /// <param name="keyToFind">The string key to search for.</param>
-    /// <param name="valueAddress">Outputs the address of the found value object.</param>
-    /// <returns>The read value as an object, or null if not found or error occurred.</returns>
-    private object GetValueFromDictByKey(ulong dictionaryAddress, string keyToFind, out ulong valueAddress)
+    public string ReadPythonStringValue(ulong addr, int maxLength)
     {
-         valueAddress = 0;
-         var dictEntries = ReadActiveDictionaryEntriesFromDictionaryAddress(dictionaryAddress);
-         if (dictEntries == null)
-         {
-              Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Не удалось прочитать записи словаря по адресу 0x{dictionaryAddress:X}");
-              return null;
-         }
-
-         // Ищем запись по ключу. Ключ должен быть строкой ('str').
-         var targetEntry = dictEntries
-              .Select(e => new { KeyObj = e.key, ValueObj = e.value, KeyString = ReadPythonStringValue(e.key, 128) })
-              .FirstOrDefault(e => e.KeyString == keyToFind);
-
-         if (targetEntry == null || targetEntry.ValueObj == 0)
-         {
-              // Собираем доступные ключи для сообщения об ошибке
-              var availableKeys = string.Join(", ", dictEntries.Select(e => ReadPythonStringValue(e.key, 128) ?? "<err>"));
-              Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Ключ '{keyToFind}' не найден в словаре 0x{dictionaryAddress:X}. Доступные ключи: [{availableKeys}]");
-              return null;
-         }
-
-         valueAddress = targetEntry.ValueObj;
-
-         // Определяем тип объекта значения
-         string pythonTypeName = GetPythonTypeNameFromObjectAddress(valueAddress);
-         if (pythonTypeName == null)
-         {
-              Console.WriteLine($"[GetValueFromDictByKey] Ошибка: Не удалось определить тип объекта значения по адресу {valueAddress:X} для ключа '{keyToFind}'.");
-              return null;
-         } 
-         
-          // --- Отладка (опционально, можно убрать для производительности) ---
-          // Console.WriteLine($"[Debug][GetValue] Адрес значения: {valueAddress:X}, Тип: {pythonTypeName}");
-          // -----------
-
-          // Читаем значение на основе типа
-         switch (pythonTypeName)
-         {
-             case "int":
-                   var intValue = ReadPythonIntValue(valueAddress);
-                   return intValue.HasValue ? (object)intValue.Value : null;
-             case "float":
-                   var floatValue = EveOnline64.ReadPythonFloatObjectValue(valueAddress, memoryReader);
-                   return floatValue.HasValue ? (object)floatValue.Value : null;
-              case "bool":
-                   var boolValue = ReadPythonBoolValue(valueAddress);
-                   return boolValue.HasValue ? (object)boolValue.Value : null;
-              case "str":
-                   return ReadPythonStringValue(valueAddress, maxLength: 1024);
-             // Добавьте другие типы, если необходимо
-             // case "instance": // Может быть полезно вернуть адрес для дальнейшего разбора
-             //     return valueAddress;
-              default:
-                   Console.WriteLine($"[GetValueFromDictByKey] Предупреждение: Неподдерживаемый тип '{pythonTypeName}' для чтения значения ключа '{keyToFind}' по адресу {valueAddress:X}. Возвращаем адрес.");
-                  return valueAddress; // Возвращаем сам адрес как fallback
-         }
+        // Используем уже существующий статический метод из EveOnline64
+        return EveOnline64.ReadPythonStringValue(addr, memoryReader, maxLength);
     }
 }

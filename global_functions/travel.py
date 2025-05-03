@@ -4,7 +4,7 @@ from modules.click_on_image import lclick_on_image, rclick_coords, click_here
 from config import GLOBAL_ASSETS, LOGS_PATH
 from modules.find_image import wait, find_image, exists
 from logging import basicConfig, info, INFO
-from api_reader import get_eve_module_quantity
+from global_functions.api_reader import get_eve_module_quantity
 
 basicConfig(level=INFO,
             filename=LOGS_PATH,
@@ -15,7 +15,7 @@ basicConfig(level=INFO,
 def travel():
     lclick_on_image(GLOBAL_ASSETS + "undock_mission.png")
     wait(GLOBAL_ASSETS + "set_dest.png", duration=30)
-    time.sleep(1)
+    time.sleep(1.5)
     lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
     time.sleep(1.5)
     lclick_on_image(GLOBAL_ASSETS + "jump_over.png")
@@ -37,8 +37,23 @@ def travel():
     info("warping to mission location")
 
 def back():
-    if exists(GLOBAL_ASSETS + "mission_completed.png"): #no img
-        pass
+    if exists(GLOBAL_ASSETS + "need_to_halle.png"): #no img
+        lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
+        time.sleep(1.5)
+        lclick_on_image(GLOBAL_ASSETS + "jump_over.png")
+        time.sleep(0.5)
+        click_here()
+
+        while exists(GLOBAL_ASSETS + "gate_yellow.png", use_color=True):
+            lclick_on_image(GLOBAL_ASSETS + "gate_yellow.png", use_color=True)
+            time.sleep(0.5)
+            lclick_on_image(GLOBAL_ASSETS + "jump_button.png")
+            wait(GLOBAL_ASSETS + "0ms.png", duration=180, acc=0.95)
+            time.sleep(2)
+
+        time.sleep(1)
+        lclick_on_image(GLOBAL_ASSETS + "dock_missions.png")
+
     else:
         info("mission not completed or have no image!")
         return 0

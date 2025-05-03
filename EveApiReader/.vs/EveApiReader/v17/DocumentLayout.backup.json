@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\EveApiReader\\",
+  "WorkspaceRootPath": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|d:\\eveapireader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|c:\\users\\theorr\\pycharmprojects\\diabolic\\eveapireader\\memoryreadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:memoryreadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|c:\\users\\theorr\\pycharmprojects\\diabolic\\eveapireader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|d:\\eveapireader\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|d:\\eveapireader\\eveapireader.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|c:\\users\\theorr\\pycharmprojects\\diabolic\\eveapireader\\eveapireader.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:eveapireader.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|d:\\eveapireader\\memoryreadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:memoryreadinglogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|c:\\users\\theorr\\pycharmprojects\\diabolic\\eveapireader\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{635A99ED-2442-BDF9-826E-CEA7DFB70A17}|EveApiReader.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,51 +36,50 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "EveApiReader",
-              "DocumentMoniker": "D:\\EveApiReader\\EveApiReader.csproj",
+              "DocumentMoniker": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj",
               "RelativeDocumentMoniker": "EveApiReader.csproj",
-              "ToolTip": "D:\\EveApiReader\\EveApiReader.csproj",
+              "ToolTip": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\EveApiReader.csproj",
               "RelativeToolTip": "EveApiReader.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-01T17:25:22.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T17:25:22.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T17:24:28.235Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\EveApiReader\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\EveApiReader\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-01T17:24:28.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\EveApiReader\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\EveApiReader\\Program.cs",
+              "ToolTip": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAEwAcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAEwAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T14:55:43.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MemoryReadingLogic.cs",
-              "DocumentMoniker": "D:\\EveApiReader\\MemoryReadingLogic.cs",
+              "DocumentMoniker": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\MemoryReadingLogic.cs",
               "RelativeDocumentMoniker": "MemoryReadingLogic.cs",
-              "ToolTip": "D:\\EveApiReader\\MemoryReadingLogic.cs",
+              "ToolTip": "C:\\Users\\theorr\\PycharmProjects\\diabolic\\EveApiReader\\MemoryReadingLogic.cs",
               "RelativeToolTip": "MemoryReadingLogic.cs",
-              "ViewState": "AgIAAMgEAAAAAAAAAAAAAMgEAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMIGAAAAAAAAAAAUwNsGAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T14:55:35.945Z"
+              "WhenOpened": "2025-05-01T14:55:35.945Z",
+              "EditorCaption": ""
             }
           ]
         }

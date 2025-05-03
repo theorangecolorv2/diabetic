@@ -1,28 +1,29 @@
 import time
 import pyautogui
 from pyautogui import keyDown
-from global_functions.checks import count_targets
+from global_functions.checks import count_targets, check_guns
 from modules.click_on_image import lclick_on_image, click_coords
 from config import GLOBAL_ASSETS
 from modules.find_image import exists, wait, find_image
 import keyboard
-from checks import check_guns
 
 
 def kill_all():
-    lock_all()
+    if lock_all() == 0:
+        return
     time.sleep(13)
     while count_targets() > 0:
         shoot_all()
         time.sleep(3)
         if exists(GLOBAL_ASSETS + "nothing.png"):
-            return
+            break
         else:
             lock_all()
             time.sleep(13)
 
 def kill_frig():
-    lock_all("frig")
+    if lock_all("frig") == 0:
+        return
     time.sleep(13)
     while count_targets() > 0:
         shoot_all()
@@ -35,7 +36,8 @@ def kill_frig():
 
 
 def kill_bs():
-    lock_all("bs")
+    if lock_all("bs") == 0:
+        return
     time.sleep(4)
     while count_targets() > 0:
         shoot_all()
@@ -60,6 +62,7 @@ def shoot_all():
             time.sleep(1)
             cycles += 1
             if cycles > 40 and not check_guns():
+                if count_targets() == 0: break
                 pyautogui.press("1")
                 pyautogui.press("f")
                 cycles = 0
@@ -74,6 +77,9 @@ def lock_all(overview: str = "all"):
         lclick_on_image(GLOBAL_ASSETS + "enemy_overview.png")
     time.sleep(3)
 
+    if exists(GLOBAL_ASSETS + "nothing.png"):
+        return 0
+
     margin = 30 # расстояние между энеми (по идее фиксированное всегда)
     _c = find_image(GLOBAL_ASSETS + "name_over.png") # первый элемент энеми
     x1, y1, x2, y2 = _c
@@ -84,6 +90,19 @@ def lock_all(overview: str = "all"):
         time.sleep(0.3)
     keyboard.release("ctrl")
 
-time.sleep(1)
-kill_frig()
-kill_all()
+
+def kill_all_auto():
+    time.sleep(12)
+    count = count_targets()
+    while count_targets(count) > 0:
+        count = count_targets(count)
+        pyautogui.press("f")
+        pyautogui.press("1")
+        iters = 0
+        while count_targets(count) != count - 1:
+            time.sleep(0.5)
+            iters += 1
+            if iters == 60:
+                pyautogui.press("f")
+                pyautogui.press("1")
+                iters = 0

@@ -1,4 +1,6 @@
-2025-04-24 21:19:59,691 INFO load error of './missions_names/The_Score.png' roi is empty
-2025-04-24 21:19:59,691 INFO ./missions_names/The_Score.png: not exists
-2025-04-24 21:19:59,800 INFO load error of './missions_names/Angel_Extravaganza.png' roi is empty
-2025-04-24 21:19:59,800 INFO ./missions_names/Angel_Extravaganza.png: not exists
+2025-05-03 18:52:01,033 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\main_over.png added
+2025-05-03 18:52:01,453 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\main_over.png
+2025-05-03 18:52:03,107 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\mtu.png added
+2025-05-03 18:52:03,619 INFO rclick click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\mtu.png
+2025-05-03 18:52:04,290 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\scoop.png added
+2025-05-03 18:52:04,703 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\scoop.png
