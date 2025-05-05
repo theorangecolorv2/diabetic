@@ -15,7 +15,7 @@ def run():
     pyautogui.press("3")
     time.sleep(0.1)
     pyautogui.press("4")
-    time.sleep(0.1)
+    time.sleep(0.2)
     pyautogui.press("5")
     # добавить треикнг скрипты и перезаряжку на хеил наверно
     pyautogui.press("n")

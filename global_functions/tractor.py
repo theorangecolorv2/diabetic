@@ -15,6 +15,12 @@ def deploy():
 def scoop():
     lclick_on_image(GLOBAL_ASSETS + "main_over.png")
     time.sleep(1.5)
+    lclick_on_image(GLOBAL_ASSETS + "mtu.png")
+    time.sleep(0.5)
+    lclick_on_image(GLOBAL_ASSETS + "loot.png")
+    time.sleep(1)
+    lclick_on_image(GLOBAL_ASSETS + "loot_all.png")
+    time.sleep(0.4)
     rclick_on_image(GLOBAL_ASSETS + "mtu.png")
     time.sleep(0.5)
     lclick_on_image(GLOBAL_ASSETS + "scoop.png")

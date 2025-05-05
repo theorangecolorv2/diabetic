@@ -5,50 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de9490bc-70ae-4947-8c2c-840b3f05e509" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global_functions/tractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/missions/Exploted_Sens/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/Dread_Pirate_Scarlet/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/Silence/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/default.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/DocumentLayout.backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/EveApiReader/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.metadata.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.projects.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/.vs/ProjectEvaluation/eveapireader.strings.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/MemoryReadingLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/MemoryReadingLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/bin/Debug/net9.0/EveApiReader.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/ref/EveApiReader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/ref/EveApiReader.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/refint/EveApiReader.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/refint/EveApiReader.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/EveApiReader.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/EveApiReader.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_assets/eve_screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/global_assets/eve_screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_assets/name_over.png" beforeDir="false" afterPath="$PROJECT_DIR$/global_assets/name_over.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_assets/nothing.png" beforeDir="false" afterPath="$PROJECT_DIR$/global_assets/nothing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_functions/api_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/api_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_assets/dock_mission.png" beforeDir="false" afterPath="$PROJECT_DIR$/global_assets/dock_mission.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/checks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/choose_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/choose_mission.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_functions/get_pid.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/get_pid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/kill_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/kill_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_functions/logs/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/logs/logs/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_functions/tractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/tractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/travel.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/travel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs/logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/find_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/find_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/missions/Exploted_Sens/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/missions/Exploted_Sens/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +71,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/theorr/PycharmProjects/diabolic&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\theorr\PycharmProjects\diabolic\missions\Cargo_Delivery\assets" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="api_reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="diabolic" />

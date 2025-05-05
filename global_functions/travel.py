@@ -5,6 +5,8 @@ from config import GLOBAL_ASSETS, LOGS_PATH
 from modules.find_image import wait, find_image, exists
 from logging import basicConfig, info, INFO
 from global_functions.api_reader import get_eve_module_quantity
+import pyautogui
+
 
 basicConfig(level=INFO,
             filename=LOGS_PATH,
@@ -14,8 +16,12 @@ basicConfig(level=INFO,
 
 def travel():
     lclick_on_image(GLOBAL_ASSETS + "undock_mission.png")
-    wait(GLOBAL_ASSETS + "set_dest.png", duration=30)
-    time.sleep(1.5)
+    while not (exists(GLOBAL_ASSETS + "set_dest.png") or exists(GLOBAL_ASSETS + "warp_to_location.png")):
+        time.sleep(1)
+    if exists(GLOBAL_ASSETS + "warp_to_location.png"):
+        lclick_on_image(GLOBAL_ASSETS + "warp_to_location.png")
+        return
+    time.sleep(4.5)
     lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
     time.sleep(1.5)
     lclick_on_image(GLOBAL_ASSETS + "jump_over.png")
@@ -23,8 +29,8 @@ def travel():
     click_here()
 
     # инициализируем апи ридер еще раз (поинтер на ячейку память мог поменяться после дока/андока
-    test_quantity = get_eve_module_quantity(get_pid())
-    info(f"проинициализировали чтение памяти, получили тестовое значение {test_quantity}")
+    # test_quantity = get_eve_module_quantity(get_pid())
+    # info(f"проинициализировали чтение памяти, получили тестовое значение {test_quantity}")
 
     while not exists(GLOBAL_ASSETS + "warp_to_location.png"):
         lclick_on_image(GLOBAL_ASSETS + "gate_yellow.png", use_color=True)
@@ -52,9 +58,23 @@ def back():
             time.sleep(2)
 
         time.sleep(1)
-        lclick_on_image(GLOBAL_ASSETS + "dock_missions.png")
+        lclick_on_image(GLOBAL_ASSETS + "dock_mission.png")
 
     else:
         info("mission not completed or have no image!")
         return 0
 
+
+def wait_land(activate = True):
+    lclick_on_image(GLOBAL_ASSETS + "enemy_overview.png")
+    while exists(GLOBAL_ASSETS + "nothing.png"):
+        time.sleep(1)
+
+    if activate:
+        pyautogui.press("3")
+        pyautogui.press("4")
+        time.sleep(0.1)
+        pyautogui.press("5")
+
+    time.sleep(11)
+    return 1

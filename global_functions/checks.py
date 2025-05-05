@@ -12,7 +12,7 @@ import datetime
 from PIL import Image, ImageDraw
 from global_functions.get_pid import get_pid
 
-def check_guns():
+def check_guns_old():
     pid = get_pid()
     count = get_eve_module_quantity(pid)
     time.sleep(3)
@@ -23,7 +23,7 @@ def check_guns():
         if get_eve_module_quantity(pid) >= count:
             return False
 
-def check_guns_cv():
+def check_guns():
     _c = find_image(GLOBAL_ASSETS + "ungroup.png", acc=0.9)
     x1, y1, x2, y2 = _c
     ratios = []

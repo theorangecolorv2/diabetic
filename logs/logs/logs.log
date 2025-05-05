@@ -1,21 +1,41 @@
-2025-05-04 00:15:27,655 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:29,836 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:31,957 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:34,093 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:36,166 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:38,230 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:40,440 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:42,488 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:44,520 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:46,629 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:48,780 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:50,867 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:52,966 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:55,169 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:57,301 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:15:59,493 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:16:01,570 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:16:03,651 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:16:05,798 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:16:07,966 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
-2025-05-04 00:16:10,089 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:11:28,339 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png added
+2025-05-06 00:11:28,752 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png
+2025-05-06 00:11:32,218 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png
+2025-05-06 00:11:32,221 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png: not exists
+2025-05-06 00:11:32,611 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\name_over.png added
+2025-05-06 00:11:33,018 INFO click on (np.int64(1413), np.int64(295), np.int64(1474), np.int64(314))
+2025-05-06 00:11:33,721 INFO click on (np.int64(1413), np.int64(325), np.int64(1474), np.int64(344))
+2025-05-06 00:11:34,435 INFO click on (np.int64(1413), np.int64(355), np.int64(1474), np.int64(374))
+2025-05-06 00:11:35,151 INFO click on (np.int64(1413), np.int64(385), np.int64(1474), np.int64(404))
+2025-05-06 00:11:35,869 INFO click on (np.int64(1413), np.int64(415), np.int64(1474), np.int64(434))
+2025-05-06 00:11:36,574 INFO click on (np.int64(1413), np.int64(445), np.int64(1474), np.int64(464))
+2025-05-06 00:11:56,581 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:12:35,458 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:12:59,992 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:13:41,143 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:13:53,756 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:14:17,408 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:14:53,299 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:14:56,216 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:14:59,126 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:15:02,075 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:15:05,024 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:15:07,922 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:15:13,865 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png
+2025-05-06 00:15:13,867 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png: not exists
+2025-05-06 00:15:14,204 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png added
+2025-05-06 00:15:14,611 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png
+2025-05-06 00:15:18,022 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png
+2025-05-06 00:15:18,025 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\nothing.png: not exists
+2025-05-06 00:15:18,393 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\name_over.png added
+2025-05-06 00:15:18,812 INFO click on (np.int64(1413), np.int64(295), np.int64(1474), np.int64(314))
+2025-05-06 00:15:19,518 INFO click on (np.int64(1413), np.int64(325), np.int64(1474), np.int64(344))
+2025-05-06 00:15:20,227 INFO click on (np.int64(1413), np.int64(355), np.int64(1474), np.int64(374))
+2025-05-06 00:15:20,944 INFO click on (np.int64(1413), np.int64(385), np.int64(1474), np.int64(404))
+2025-05-06 00:15:21,648 INFO click on (np.int64(1413), np.int64(415), np.int64(1474), np.int64(434))
+2025-05-06 00:15:22,360 INFO click on (np.int64(1413), np.int64(445), np.int64(1474), np.int64(464))
+2025-05-06 00:15:42,362 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:15:52,602 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:16:31,397 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:16:41,610 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
+2025-05-06 00:16:55,227 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\ungroup.png added
