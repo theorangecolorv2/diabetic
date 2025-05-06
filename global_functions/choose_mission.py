@@ -17,7 +17,6 @@ def make(run):
 
     travel()
     time.sleep(5)
-    wait(GLOBAL_ASSETS + "0ms.png", acc=0.9)
 
     if exists(GLOBAL_ASSETS + "close.png"): lclick_on_image(GLOBAL_ASSETS + "close.png")
 
@@ -39,8 +38,11 @@ def choose_mission_and_run():
         make(run)
     elif exists("global_functions/missions_names/Dread_Pirate_Scarlet.png"):
         from missions.Dread_Pirate_Scarlet.run import run
-        #make(run)
-        run()
+        make(run)
+    elif exists("global_functions/missions_names/The_Serpenties_Spies.png"):
+        from missions.The_Serpenties_Spies.run import run
+        make(run)
+        
 
     # etc
 

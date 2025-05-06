@@ -33,3 +33,5 @@ def main():
         print(f"миссий сделано: {count} \n")
 
 
+time.sleep(1)
+scoop()

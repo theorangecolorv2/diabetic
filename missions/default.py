@@ -7,14 +7,34 @@ from modules.find_image import wait, exists
 from global_functions.kill_all import kill_frig, kill_all
 from global_functions.tractor import deploy, scoop
 
+def turn_on():
+    pyautogui.press("2")
+    time.sleep(0.1)
+    pyautogui.press("3")
+    time.sleep(0.1)
+    pyautogui.press("4")
+    time.sleep(0.1)
+    pyautogui.press("5")
+    time.sleep(0.1)
 
-def default(count, starts_with_gate, loot = True, close = False, first_gate_range = 0):
+def use_gate(mwd = True):
+    lclick_on_image(GLOBAL_ASSETS + "main_over.png")
+    time.sleep(1)
+    lclick_on_image(GLOBAL_ASSETS + "gate.png")
+    time.sleep(0.5)
+    lclick_on_image(GLOBAL_ASSETS + "jump_button.png")
+    time.sleep(0.5)
+    if mwd: lclick_on_image(GLOBAL_ASSETS + "mwd.png")
+    wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=25)
+
+
+def default(count, initial_gate = True, loot = True, close = False, first_gate_range = 0):
 
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)
     time.sleep(2)
 
-    if starts_with_gate:
+    if initial_gate:
         lclick_on_image(GLOBAL_ASSETS + "main_over.png")
         time.sleep(1)
         lclick_on_image(GLOBAL_ASSETS + "gate.png")
@@ -65,11 +85,4 @@ def default(count, starts_with_gate, loot = True, close = False, first_gate_rang
 
         time.sleep(1)
 
-        lclick_on_image(GLOBAL_ASSETS + "main_over.png")
-        time.sleep(1)
-        lclick_on_image(GLOBAL_ASSETS + "gate.png")
-        time.sleep(0.5)
-        lclick_on_image(GLOBAL_ASSETS + "jump_button.png")
-        time.sleep(0.5)
-        lclick_on_image(GLOBAL_ASSETS + "mwd.png")
-        wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=25)
+        use_gate(mwd = True)
