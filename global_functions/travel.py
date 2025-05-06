@@ -40,6 +40,8 @@ def travel():
         time.sleep(2)
 
     lclick_on_image(GLOBAL_ASSETS + "warp_to_location.png")
+    time.sleep(1)
+    wait(GLOBAL_ASSETS + "warping.png", duration=15)
     info("warping to mission location")
 
 def back():

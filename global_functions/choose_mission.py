@@ -42,7 +42,12 @@ def choose_mission_and_run():
     elif exists("global_functions/missions_names/The_Serpenties_Spies.png"):
         from missions.The_Serpenties_Spies.run import run
         make(run)
-        
-
+    elif exists("global_functions/missions_names/Surprise.png"):
+        from missions.Surprise.run import run
+        make(run)
+    elif exists("global_functions/missions_names/pot_and_kettle.png"):
+        from missions.Pot_and_Kettle.run import run
+        make(run)
+    #Unauthorized_Military_Presence
     # etc
 

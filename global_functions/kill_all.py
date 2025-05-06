@@ -95,7 +95,7 @@ def lock_all(overview: str = "all"):
         lclick_on_image(GLOBAL_ASSETS + "frig_overview.png")
     elif overview == "all":
         lclick_on_image(GLOBAL_ASSETS + "enemy_overview.png")
-    time.sleep(3)
+    time.sleep(2)
 
     if exists(GLOBAL_ASSETS + "nothing.png"):
         return 0

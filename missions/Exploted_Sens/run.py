@@ -9,6 +9,8 @@ from global_functions.tractor import deploy, scoop
 
 
 def run():
+    #emp and tacking speed script
+
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)
     time.sleep(2)

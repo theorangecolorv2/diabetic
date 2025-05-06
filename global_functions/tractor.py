@@ -21,11 +21,12 @@ def scoop():
 
     wait(GLOBAL_ASSETS + "cargo_container.png")
 
-    lclick_on_image(GLOBAL_ASSETS + "cargo_container.png")
-    time.sleep(0.5)
-    lclick_on_image(GLOBAL_ASSETS + "loot.png")
-    time.sleep(1)
-    lclick_on_image(GLOBAL_ASSETS + "loot_all.png")
-    time.sleep(0.4)
+    if exists(GLOBAL_ASSETS + "cargo_container.png"):
+        lclick_on_image(GLOBAL_ASSETS + "cargo_container.png")
+        time.sleep(0.5)
+        lclick_on_image(GLOBAL_ASSETS + "loot.png")
+        time.sleep(1)
+        lclick_on_image(GLOBAL_ASSETS + "loot_all.png")
+        time.sleep(0.4)
 
 

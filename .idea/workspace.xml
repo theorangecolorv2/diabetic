@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de9490bc-70ae-4947-8c2c-840b3f05e509" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/missions/The_Serpenties_Spies/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/Pot_and_Kettle/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/Surprise/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/missions/Unauthorized_Military_Presence/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EveApiReader/obj/Debug/net9.0/EveApiReader.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/choose_mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/choose_mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_functions/kill_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/kill_all.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global_functions/tractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/tractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_functions/travel.py" beforeDir="false" afterPath="$PROJECT_DIR$/global_functions/travel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs/logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/missions/Angel_Extravaganza/run.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/missions/Exploted_Sens/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/missions/Exploted_Sens/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/missions/The_Score/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/missions/Pot_and_Kettle/assets/amarr_drone_mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/missions/Pot_and_Kettle/assets/prophecy.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/missions/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/missions/default.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
