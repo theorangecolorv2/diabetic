@@ -18,8 +18,10 @@ def travel():
     lclick_on_image(GLOBAL_ASSETS + "undock_mission.png")
     while not (exists(GLOBAL_ASSETS + "set_dest.png") or exists(GLOBAL_ASSETS + "warp_to_location.png")):
         time.sleep(1)
+    time.sleep(4.5)
     if exists(GLOBAL_ASSETS + "warp_to_location.png"):
         lclick_on_image(GLOBAL_ASSETS + "warp_to_location.png")
+        wait(GLOBAL_ASSETS + "warping.png")
         return
     time.sleep(4.5)
     lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
@@ -27,10 +29,8 @@ def travel():
     lclick_on_image(GLOBAL_ASSETS + "jump_over.png")
     time.sleep(0.5)
     click_here()
+    wait(GLOBAL_ASSETS + "warping.png")
 
-    # инициализируем апи ридер еще раз (поинтер на ячейку память мог поменяться после дока/андока
-    # test_quantity = get_eve_module_quantity(get_pid())
-    # info(f"проинициализировали чтение памяти, получили тестовое значение {test_quantity}")
 
     while not exists(GLOBAL_ASSETS + "warp_to_location.png"):
         lclick_on_image(GLOBAL_ASSETS + "gate_yellow.png", use_color=True)
@@ -45,6 +45,11 @@ def travel():
     info("warping to mission location")
 
 def back():
+    if exists(GLOBAL_ASSETS + "dock_mission.png"):
+        lclick_on_image(GLOBAL_ASSETS + "dock_mission.png")
+        time.sleep(1)
+        return
+
     if exists(GLOBAL_ASSETS + "need_to_halle.png"): #no img
         lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
         time.sleep(1.5)

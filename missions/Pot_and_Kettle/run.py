@@ -18,4 +18,4 @@ def run():
     lclick_on_image(GLOBAL_ASSETS + "lock.png")
     time.sleep(7)
     pyautogui.press("1")
-    time.sleep(10)
+    time.sleep(15)

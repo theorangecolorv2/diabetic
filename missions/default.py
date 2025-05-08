@@ -4,7 +4,7 @@ from config import GLOBAL_ASSETS
 from global_functions.travel import wait_land
 from modules.click_on_image import lclick_on_image
 from modules.find_image import wait, exists
-from global_functions.kill_all import kill_frig, kill_all
+from global_functions.kill_all import kill_frig, kill_all, kill_bs
 from global_functions.tractor import deploy, scoop
 
 def turn_on(bastion = True, not_first = False):
@@ -30,11 +30,31 @@ def use_gate(mwd = True):
     wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=90)
 
 
-def default(count, initial_gate = True, loot = True, close = False, first_gate_range = 0):
+def default(count, initial_gate = True, loot = True, close = False, first_gate_range = 0, enemy_on_initial = False,
+            kill_bs_only = False):
 
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)
     time.sleep(2)
+
+
+    if enemy_on_initial:
+        if loot: deploy()
+        turn_on()
+        kill_all()
+        pyautogui.press("2")
+        time.sleep(0.2)
+        if loot: scoop()
+        time.sleep(0.2)
+        pyautogui.press("m")
+        time.sleep(0.2)
+        pyautogui.press("3")
+        time.sleep(0.2)
+        pyautogui.press("4")
+        time.sleep(0.2)
+        pyautogui.press("5")
+        time.sleep(0.2)
+        wait(GLOBAL_ASSETS + "bastion_off.png", duration=55, acc=0.97)
 
     if initial_gate:
         lclick_on_image(GLOBAL_ASSETS + "main_over.png")
@@ -46,7 +66,7 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
         time.sleep(0.5)
         if first_gate_range > 0: lclick_on_image(GLOBAL_ASSETS + "mwd.png")
 
-        wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=25)
+        wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=75)
 
 
     for i in range(count):
@@ -68,8 +88,10 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
             time.sleep(0.1)
             pyautogui.press("5")
 
-        kill_frig()
-        kill_all()
+        if not kill_bs_only:
+            kill_frig()
+            kill_all()
+        else: kill_bs()
 
         if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
         time.sleep(0.8)
