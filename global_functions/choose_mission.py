@@ -1,11 +1,10 @@
 import time
-from pickle import GLOBAL
-
 from config import GLOBAL_ASSETS
 from global_functions.refresh import refresh, talk
 from modules.click_on_image import lclick_on_image, rclick_coords
 from modules.find_image import exists, wait, find_image
 from global_functions.travel import travel, back
+
 
 def make(run, ammo, tracking, optimal, universal):
 
@@ -32,9 +31,18 @@ def make(run, ammo, tracking, optimal, universal):
 
 
 def choose_mission_and_run():
-    if exists("global_functions/missions_names/Exploited_Sens.png"):
+    # burners
+    if exists("global_functions/missions_names/vengeance_team.png", acc=0.95):
+        refit_burner("vengeance_team")
+        time.sleep(0.2)
+        from missions.vengeance_team.run import run
+        make(run, ammo="occult", tracking=0, optimal=0, universal=0) # мб не оккульт не помню
+
+
+    # other missions
+    elif exists("global_functions/missions_names/Exploited_Sens.png"):
         from missions.Exploted_Sens.run import run
-        make(run, ammo="phased", tracking=1, optimal=1, universal=0)
+        make(run, ammo="emp", tracking=2, optimal=0, universal=0)
 
     elif exists("global_functions/missions_names/Dread_Pirate_Scarlet.png"):
         from missions.Dread_Pirate_Scarlet.run import run
@@ -46,7 +54,7 @@ def choose_mission_and_run():
 
     elif exists("global_functions/missions_names/Surprise.png"):
         from missions.Surprise.run import run
-        make(run, ammo="phased", tracking=1, optimal=1, universal=0)
+        make(run, ammo="phased", tracking=0, optimal=2, universal=0)
 
     elif exists("global_functions/missions_names/pot_and_kettle.png"):
         from missions.Pot_and_Kettle.run import run
@@ -54,11 +62,11 @@ def choose_mission_and_run():
 
     elif exists("global_functions/missions_names/Massive_Attack.png"):
         from missions.Massive_Attack.run import run
-        make(run, ammo="phased", tracking=1, optimal=1, universal=0)
+        make(run, ammo="phased", tracking=0, optimal=2, universal=0)
 
     elif exists("global_functions/missions_names/Pirate_Invasion.png"):
         from missions.Pirate_Invasion.run import run
-        make(run, ammo="phased", tracking=1, optimal=1, universal=0)
+        make(run, ammo="phased", tracking=0, optimal=2, universal=0)
 
     elif exists("global_functions/missions_names/The_Mordus_Headhunters.png"): # нужен рефит в много танка вместо мжд; не проверено!!
         from missions.The_Mordus_Headhunters.run import run
@@ -96,6 +104,14 @@ def config(ammo = "phased", tracking = 1, optimal = 1, universal = 0):
         rclick_coords(*guns)
         time.sleep(0.4)
         lclick_on_image(GLOBAL_ASSETS + "fusion.png") # add img!
+    elif ammo == "occult":
+        rclick_coords(*guns)
+        time.sleep(0.4)
+        lclick_on_image(GLOBAL_ASSETS + "occult.png")  # add img!
+    elif ammo == "mystic":
+        rclick_coords(*guns)
+        time.sleep(0.4)
+        lclick_on_image(GLOBAL_ASSETS + "mystic.png")  # add img!
 
     time.sleep(0.4)
 

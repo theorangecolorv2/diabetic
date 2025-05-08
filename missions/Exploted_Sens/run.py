@@ -1,5 +1,4 @@
 import time
-
 import pyautogui
 from missions.default import turn_on
 from config import GLOBAL_ASSETS
@@ -26,4 +25,4 @@ def run():
     pyautogui.press("m")
     time.sleep(0.2)
     scoop()
-    wait(GLOBAL_ASSETS + "bastion_off.png", duration=55, acc=0.97)
+    wait(GLOBAL_ASSETS + "bastion_off.png", duration=60, acc=0.97)

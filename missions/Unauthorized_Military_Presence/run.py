@@ -1,7 +1,6 @@
 import time
 import pyautogui
 from config import GLOBAL_ASSETS
-from global_functions.travel import wait_land
 from missions.default import turn_on, default
 from modules.click_on_image import lclick_on_image, hover
 from modules.find_image import wait, exists
@@ -28,7 +27,7 @@ def run():
         pyautogui.scroll(-150)
         time.sleep(0.4)
     time.sleep(0.2)
-    lclick_on_image("missions/Unauthorized_Military_Presence/angel_cartel_personel.png") # !!!! add
+    lclick_on_image("missions/Unauthorized_Military_Presence/angel_cartel_personel.png")
     time.sleep(0.3)
     lclick_on_image(GLOBAL_ASSETS + "approach.png")
     time.sleep(2)
@@ -47,7 +46,7 @@ def run():
 
     scoop()
 
-    if exists("missions/Unauthorized_Military_Presence/you_need_10.png"): # u need to ...
+    if exists("missions/Unauthorized_Military_Presence/you_need_10.png"):
         deploy()
 
         lock_all()
@@ -55,4 +54,5 @@ def run():
         time.sleep(15)
         scoop()
 
+    # тут наверно надо выключить бастион и инста отварп
 

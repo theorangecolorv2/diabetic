@@ -70,18 +70,3 @@ def back():
     else:
         info("mission not completed or have no image!")
         return 0
-
-
-def wait_land(activate = True):
-    lclick_on_image(GLOBAL_ASSETS + "enemy_overview.png")
-    while exists(GLOBAL_ASSETS + "nothing.png"):
-        time.sleep(1)
-
-    if activate:
-        pyautogui.press("3")
-        pyautogui.press("4")
-        time.sleep(0.1)
-        pyautogui.press("5")
-
-    time.sleep(11)
-    return 1
