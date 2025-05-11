@@ -50,7 +50,7 @@ def back():
         time.sleep(1)
         return
 
-    if exists(GLOBAL_ASSETS + "need_to_halle.png"): #no img
+    if exists(GLOBAL_ASSETS + "need_to_halle.png") or exists(GLOBAL_ASSETS + "set_dest.png"): #no img
         lclick_on_image(GLOBAL_ASSETS + "set_dest.png")
         time.sleep(1.5)
         lclick_on_image(GLOBAL_ASSETS + "jump_over.png")

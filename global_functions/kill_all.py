@@ -8,13 +8,14 @@ from modules.find_image import exists, wait, find_image
 import keyboard
 
 
-def kill_all():
+def kill_all(wait_resp = False):
     if lock_all() == 0:
         return 1
     time.sleep(13)
     while count_targets() > 0:
         shoot_all()
         time.sleep(3)
+        if wait_resp: time.sleep(7)
         if exists(GLOBAL_ASSETS + "nothing.png"):
             continue
         else:
@@ -88,7 +89,7 @@ def shoot_all():
                 cycles = 0
 
 
-def lock_all(overview: str = "all"):
+def lock_all(overview: str = "all", count=6):
     if overview == 'bs':
         lclick_on_image(GLOBAL_ASSETS + "bs_overview.png")
     elif overview == "frig":
@@ -105,7 +106,7 @@ def lock_all(overview: str = "all"):
     x1, y1, x2, y2 = _c
     #x1, y1, x2, y2
     keyboard.press("ctrl")
-    for i in range(1,7):
+    for i in range(1,count+1):
         click_coords(x1, y1 + margin*i, x2, y2 + margin*i)
         time.sleep(0.3)
     keyboard.release("ctrl")

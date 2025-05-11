@@ -30,20 +30,21 @@ def use_gate(mwd = True):
 
 
 def default(count, initial_gate = True, loot = True, close = False, first_gate_range = 0, enemy_on_initial = False,
-            kill_bs_only = False):
+            kill_bs_only = False, wait_resp = False):
 
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)
     time.sleep(2)
 
+    if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
 
     if enemy_on_initial:
-        if loot: deploy()
+        #if loot: deploy()
         turn_on()
         kill_all()
         pyautogui.press("2")
         time.sleep(0.2)
-        if loot: scoop()
+        #if loot: scoop()
         time.sleep(0.2)
         pyautogui.press("m")
         time.sleep(0.2)
@@ -55,18 +56,19 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
         time.sleep(0.2)
         wait(GLOBAL_ASSETS + "bastion_off.png", duration=55, acc=0.97)
 
+    if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
+
     if initial_gate:
         lclick_on_image(GLOBAL_ASSETS + "main_over.png")
         time.sleep(1)
         lclick_on_image(GLOBAL_ASSETS + "gate.png")
         time.sleep(0.5)
         lclick_on_image(GLOBAL_ASSETS + "jump_button.png")
-
-        time.sleep(0.5)
-        if first_gate_range > 0: lclick_on_image(GLOBAL_ASSETS + "mwd.png")
+        if enemy_on_initial: lclick_on_image(GLOBAL_ASSETS + "mwd.png")
 
         wait(GLOBAL_ASSETS + "warping.png", acc=0.92, duration=75)
 
+    if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
 
     for i in range(count):
         while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
@@ -87,9 +89,11 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
             time.sleep(0.1)
             pyautogui.press("5")
 
+        if wait_resp: time.sleep(5)
+
         if not kill_bs_only:
             kill_frig()
-            kill_all()
+            kill_all(wait_resp=wait_resp)
         else: kill_bs()
 
         if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
@@ -108,4 +112,7 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
 
         time.sleep(1)
 
-        use_gate(mwd = True)
+        if i+1 != count: use_gate(mwd = True)
+
+def loot_wreck():
+    print("доделай")

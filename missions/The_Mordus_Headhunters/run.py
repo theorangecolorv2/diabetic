@@ -8,9 +8,9 @@ from global_functions.kill_all import kill_frig, kill_all, kill_bs, lock_all, sh
 from global_functions.tractor import deploy, scoop
 
 def run():
-    default(count=1, initial_gate=True, loot=False)
+    #default(count=1, initial_gate=True, loot=True)
 
-    use_gate(mwd=True)
+    #use_gate(mwd=True)
 
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)

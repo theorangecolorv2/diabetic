@@ -18,7 +18,7 @@ def make(run, ammo, tracking, optimal, universal):
     travel()
 
     time.sleep(0.2)
-    config(ammo=ammo, tracking=tracking, optimal=optimal, universal=universal)
+    #config(ammo=ammo, tracking=tracking, optimal=optimal, universal=universal)
     time.sleep(0.2)
 
     if exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png")
@@ -80,18 +80,45 @@ def choose_mission_and_run():
         from missions.Buzz_Kill.run import run
         make(run, ammo="fusion", tracking=2, optimal=0, universal=0) # не помню трекинг или оптимал нужен
 
+    elif exists("global_functions/missions_names/The_Right_Hand_of_Zazzmatazz.png"):
+        from missions.The_Right_Hand_of_Zazzmatazz.run import run
+        make(run, ammo="fusion", tracking=1, optimal=1, universal=0)
+
+    elif exists("global_functions/missions_names/Silence_the_Informant.png"):
+        from missions.Silence.run import run
+        make(run, ammo="fusion", tracking=1, optimal=1, universal=0)
+
+    elif exists("global_functions/missions_names/Vengeance.png"):
+        from missions.Vengeance.run import run
+        make(run, ammo="fusion", tracking=1, optimal=1, universal=0)
+
+    elif exists("global_functions/missions_names/Infiltrated_Outposts.png"):
+        from missions.Infiltrated_Outposts.run import run
+        make(run, ammo="fusion", tracking=2, optimal=0, universal=0)
+
+    elif exists("global_functions/missions_names/Attack_of_the_Drones.png"):
+        from missions.Attack_of_the_Drones.run import run
+        #make(run, ammo="fusion", tracking=2, optimal=0, universal=0) # оч много дпса с баттлов рефит в танк
+
+    elif exists("global_functions/missions_names/Recon_1.png"):
+        from missions.Recon_1.run import run
+        make(run, ammo="fusion", tracking=2, optimal=0, universal=0)
+
+
+#Attack_of_the_Drones
 
 def config(ammo = "phased", tracking = 1, optimal = 1, universal = 0):
     if universal + tracking + optimal > 2:
         print("too much scripts, i have only 2 track comps")
         return 0
-    x1,y1,x2,y2 = find_image("") # some static img
-    guns = (x1,y1,x2,y2) # calc it
-    track_comp = [(x1,y1,x2,y2), (x1,y1,x2,y2)] # calc it
+    x1,y1,x2,y2 = find_image(GLOBAL_ASSETS + "module_static_img.png") # some static img
+    guns = (x1 + 282,y1-92,x2 + 282,y2-92) # calc it
+    track_comp = [(x1+380,y1-92,x2+380,y2-92), (x1+418,y1-92,x2+418,y2-92)] # calc it
     if ammo == "phased":
         rclick_coords(*guns)
         time.sleep(0.4)
-        lclick_on_image(GLOBAL_ASSETS + "phased.png") # add img!
+        if exists(GLOBAL_ASSETS + "phased.png"):
+            lclick_on_image(GLOBAL_ASSETS + "phased.png") # add img!
     elif ammo == "emp":
         rclick_coords(*guns)
         time.sleep(0.4)
@@ -107,7 +134,8 @@ def config(ammo = "phased", tracking = 1, optimal = 1, universal = 0):
     elif ammo == "occult":
         rclick_coords(*guns)
         time.sleep(0.4)
-        lclick_on_image(GLOBAL_ASSETS + "occult.png")  # add img!
+        if exists(GLOBAL_ASSETS + "occult.png"):
+            lclick_on_image(GLOBAL_ASSETS + "occult.png")  # add img!
     elif ammo == "mystic":
         rclick_coords(*guns)
         time.sleep(0.4)

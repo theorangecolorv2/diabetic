@@ -1,172 +1,127 @@
-2025-05-07 23:37:12,227 INFO cant found image global_functions/missions_names/Exploited_Sens.png
-2025-05-07 23:37:12,229 INFO global_functions/missions_names/Exploited_Sens.png: not exists
-2025-05-07 23:37:12,443 INFO cant found image global_functions/missions_names/Dread_Pirate_Scarlet.png
-2025-05-07 23:37:12,445 INFO global_functions/missions_names/Dread_Pirate_Scarlet.png: not exists
-2025-05-07 23:37:12,574 INFO load error of 'global_functions/missions_names/The_Serpenties_Spies.png' roi is empty
-2025-05-07 23:37:12,575 INFO global_functions/missions_names/The_Serpenties_Spies.png: not exists
-2025-05-07 23:37:12,796 INFO cant found image global_functions/missions_names/Surprise.png
-2025-05-07 23:37:12,797 INFO global_functions/missions_names/Surprise.png: not exists
-2025-05-07 23:37:13,009 INFO global_functions/missions_names/pot_and_kettle.png: exists
-2025-05-07 23:37:13,200 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\accept_dialog.png
-2025-05-07 23:37:13,201 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\accept_dialog.png: not exists
-2025-05-07 23:37:14,925 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\track.png
-2025-05-07 23:37:14,927 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\track.png: not exists
-2025-05-07 23:37:15,636 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\close_dialog.png: exists
-2025-05-07 23:37:15,865 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\close_dialog.png added
-2025-05-07 23:37:16,273 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\close_dialog.png
-2025-05-07 23:37:16,971 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\undock_mission.png added
-2025-05-07 23:37:17,389 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\undock_mission.png
-2025-05-07 23:37:17,599 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:17,601 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:17,821 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:17,823 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:19,027 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:19,029 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:19,217 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:19,219 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:20,427 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:20,429 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:20,628 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:20,629 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:21,822 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:21,824 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:22,024 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:22,026 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:23,232 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:23,233 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:23,429 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:23,431 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:24,592 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:24,594 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:24,761 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:24,763 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:25,975 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:25,977 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: not exists
-2025-05-07 23:37:26,152 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:26,153 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:27,464 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: exists
-2025-05-07 23:37:32,162 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:37:32,164 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:37:36,861 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png added
-2025-05-07 23:37:37,272 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
-2025-05-07 23:37:38,958 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_over.png added
-2025-05-07 23:37:39,373 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_over.png
-2025-05-07 23:37:40,027 INFO click on current coords
-2025-05-07 23:37:40,254 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:41,483 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:42,688 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:43,891 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:45,096 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:46,291 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:47,496 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:48,700 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:49,918 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:51,130 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:52,343 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:53,546 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:54,745 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:55,999 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:57,208 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:58,412 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:37:59,613 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:38:00,843 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:38:00,845 INFO didnt wait C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:38:01,046 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:38:01,047 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: not exists
-2025-05-07 23:38:01,314 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png added
-2025-05-07 23:38:01,722 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
-2025-05-07 23:38:02,403 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png added
-2025-05-07 23:38:02,822 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png
-2025-05-07 23:38:03,012 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:04,212 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:05,395 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:06,573 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:07,761 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:08,930 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:10,133 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:11,328 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:12,502 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:13,700 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:14,897 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:16,096 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:17,296 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:18,497 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:19,697 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:20,894 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:22,071 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:23,260 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:24,441 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:25,706 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:26,908 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:28,082 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:29,271 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:30,467 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:31,653 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:32,834 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:34,027 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:35,200 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:36,392 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:37,572 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:38,755 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:39,937 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:41,129 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:42,316 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:43,545 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:44,743 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:45,921 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:47,107 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:48,293 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:49,470 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:50,655 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:51,842 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:53,017 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:54,209 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:55,417 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:56,613 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:57,811 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:38:59,010 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:39:00,207 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
-2025-05-07 23:39:03,683 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png: exists
-2025-05-07 23:39:03,913 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png added
-2025-05-07 23:39:04,319 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\warp_to_location.png
-2025-05-07 23:39:05,529 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:06,764 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:07,981 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:09,201 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:10,408 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:11,606 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:12,816 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:14,030 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:15,254 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:16,467 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:17,683 INFO warping to mission location
-2025-05-07 23:39:22,904 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\close.png: exists
-2025-05-07 23:39:23,126 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\close.png added
-2025-05-07 23:39:23,537 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\close.png
-2025-05-07 23:39:23,760 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:25,990 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:28,198 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:30,416 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:32,630 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:34,850 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:37,060 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:39,266 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:41,477 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:43,700 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:45,921 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:48,127 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:50,330 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:52,543 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: exists
-2025-05-07 23:39:54,747 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png
-2025-05-07 23:39:54,749 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\warping.png: not exists
-2025-05-07 23:39:54,948 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png added
-2025-05-07 23:39:55,368 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\enemy_overview.png
-2025-05-07 23:39:56,126 INFO cords of missions/Pot_and_Kettle/prophecy.png added
-2025-05-07 23:39:56,535 INFO click on missions/Pot_and_Kettle/prophecy.png
-2025-05-07 23:39:57,230 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\lock.png added
-2025-05-07 23:39:57,633 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\lock.png
-2025-05-07 23:40:14,955 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png
-2025-05-07 23:40:14,956 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png: not exists
-2025-05-07 23:40:15,157 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\need_to_halle.png
-2025-05-07 23:40:15,158 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\need_to_halle.png: not exists
-2025-05-07 23:40:15,158 INFO mission not completed or have no image!
+2025-05-11 22:17:19,541 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png
+2025-05-11 22:17:19,543 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png: not exists
+2025-05-11 22:17:19,715 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\need_to_halle.png
+2025-05-11 22:17:19,716 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\need_to_halle.png: not exists
+2025-05-11 22:17:19,923 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png: exists
+2025-05-11 22:17:20,132 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png added
+2025-05-11 22:17:20,539 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\set_dest.png
+2025-05-11 22:17:22,229 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_over.png added
+2025-05-11 22:17:22,640 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_over.png
+2025-05-11 22:17:23,293 INFO click on current coords
+2025-05-11 22:17:23,564 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png: exists
+2025-05-11 22:17:23,815 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png added
+2025-05-11 22:17:24,222 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
+2025-05-11 22:17:24,924 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png added
+2025-05-11 22:17:25,339 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png
+2025-05-11 22:17:27,775 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png: exists
+2025-05-11 22:17:28,032 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png added
+2025-05-11 22:17:28,439 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
+2025-05-11 22:17:29,128 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png added
+2025-05-11 22:17:29,539 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png
+2025-05-11 22:17:29,726 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:30,955 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:32,132 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:33,338 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:34,523 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:35,692 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:36,868 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:38,051 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:39,231 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:40,417 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:41,595 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:42,783 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:43,972 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:45,152 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:46,356 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:47,548 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:48,727 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:49,961 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:51,137 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:52,337 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:53,525 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:54,715 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:55,910 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:57,117 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:58,310 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:17:59,526 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:00,701 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:01,895 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:03,104 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:04,293 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:05,478 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:06,667 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:07,877 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:09,068 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:10,258 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:11,443 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:12,612 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:13,796 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:14,989 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:16,190 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:17,365 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:18,544 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:19,711 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:20,876 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:22,051 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:23,225 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:24,394 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:25,575 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:26,749 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:27,930 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:29,118 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:30,295 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:33,742 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png: exists
+2025-05-11 22:18:33,984 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png added
+2025-05-11 22:18:34,404 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
+2025-05-11 22:18:35,096 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png added
+2025-05-11 22:18:35,504 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png
+2025-05-11 22:18:37,939 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png: exists
+2025-05-11 22:18:38,181 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png added
+2025-05-11 22:18:38,587 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
+2025-05-11 22:18:39,298 INFO cords of C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png added
+2025-05-11 22:18:39,703 INFO click on C:\Users\theorr\PycharmProjects\diabolic\global_assets\jump_button.png
+2025-05-11 22:18:39,881 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:41,069 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:42,248 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:43,439 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:44,632 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:45,825 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:47,062 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:48,269 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:49,467 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:50,648 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:51,834 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:53,008 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:54,174 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:55,346 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:56,532 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:57,720 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:18:58,899 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:00,087 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:01,264 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:02,463 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:03,661 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:04,859 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:06,039 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:07,216 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:08,389 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:09,565 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:10,754 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:11,933 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:13,111 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:14,298 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:15,478 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:16,663 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:17,858 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:19,029 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:20,219 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:21,395 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:22,584 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:23,759 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:24,923 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:26,124 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:27,286 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\0ms.png
+2025-05-11 22:19:30,705 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png
+2025-05-11 22:19:30,707 INFO C:\Users\theorr\PycharmProjects\diabolic\global_assets\gate_yellow.png: not exists
+2025-05-11 22:19:31,919 INFO cant found image C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png
+2025-05-11 22:19:31,921 INFO image C:\Users\theorr\PycharmProjects\diabolic\global_assets\dock_mission.png not found
