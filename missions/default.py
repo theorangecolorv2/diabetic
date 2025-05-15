@@ -15,8 +15,16 @@ def turn_on(bastion = True, not_first = False):
     if not not_first:
         pyautogui.press("4")
         time.sleep(0.1)
-        pyautogui.press("5")
-        time.sleep(0.1)
+        activate_track_comps()
+
+def activate_track_comps():
+    if exists(GLOBAL_ASSETS + "track_comp.png"): lclick_on_image(GLOBAL_ASSETS + "track_comp.png")
+    time.sleep(0.4)
+    if exists(GLOBAL_ASSETS + "track_comp_tracking.png"): lclick_on_image(GLOBAL_ASSETS + "track_comp_tracking.png") # add
+    time.sleep(0.4)
+    if exists(GLOBAL_ASSETS + "track_comp_optimal.png"): lclick_on_image(GLOBAL_ASSETS + "track_comp_optimal.png") # add
+
+
 
 def use_gate(mwd = True):
     lclick_on_image(GLOBAL_ASSETS + "main_over.png")
@@ -30,7 +38,7 @@ def use_gate(mwd = True):
 
 
 def default(count, initial_gate = True, loot = True, close = False, first_gate_range = 0, enemy_on_initial = False,
-            kill_bs_only = False, wait_resp = False):
+            kill_bs_only = False, wait_resp = False, kill_frig_first = True, extra_comp = True):
 
     while exists(GLOBAL_ASSETS + "warping.png", acc=0.92):
         time.sleep(2)
@@ -52,8 +60,7 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
         time.sleep(0.2)
         pyautogui.press("4")
         time.sleep(0.2)
-        pyautogui.press("5")
-        time.sleep(0.2)
+        activate_track_comps()
         wait(GLOBAL_ASSETS + "bastion_off.png", duration=55, acc=0.97)
 
     if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
@@ -87,12 +94,12 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
         if i == 0:
             pyautogui.press("4")
             time.sleep(0.1)
-            pyautogui.press("5")
+            activate_track_comps()
 
-        if wait_resp: time.sleep(5)
+        if wait_resp: time.sleep(12)
 
         if not kill_bs_only:
-            kill_frig()
+            if kill_frig_first: kill_frig()
             kill_all(wait_resp=wait_resp)
         else: kill_bs()
 

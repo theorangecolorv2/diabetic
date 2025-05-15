@@ -25,7 +25,7 @@ def lclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, 
     else:
         x1, y1, x2, y2 = find_image(image, region, acc=acc)
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
-    time.sleep(0.05)
+    time.sleep(0.02)
     click()
 
     info(f"click on {image}")
@@ -34,7 +34,7 @@ def lclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, 
 def dclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, acc: float = 0.8):
     x1, y1, x2, y2 = find_image(image, region, acc=acc)
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
-    time.sleep(0.05)
+    time.sleep(0.02)
     doubleClick()
 
     info(f"double click on {image}")
@@ -44,7 +44,7 @@ def dclick_on_image(image: str, region: tuple = SCREEN, duration: float = 0.25, 
 def rclick_on_image(image: str, region: tuple = (0,0,1920,1920), duration: float = 0.25, acc: float = 0.8):
     x1, y1, x2, y2 = find_image(image, region, acc=acc)
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
-    time.sleep(0.05)
+    time.sleep(0.02)
     rightClick()
 
     info(f"rclick click on {image}")
@@ -52,18 +52,18 @@ def rclick_on_image(image: str, region: tuple = (0,0,1920,1920), duration: float
 
 def click_here():
     click()
-    time.sleep(0.05)
+    time.sleep(0.02)
     info(f"click on current coords")
 
 
 def click_coords(x1,y1,x2,y2, duration: float = 0.25):
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
-    time.sleep(0.05)
+    time.sleep(0.02)
     click()
     info(f"click on {x1,y1,x2,y2}")
 
 def rclick_coords(x1,y1,x2,y2, duration: float = 0.25):
     mover.move_to((x1 + x2) / 2, (y1 + y2) / 2, duration)
-    time.sleep(0.05)
+    time.sleep(0.02)
     rightClick()
     info(f"click on {x1,y1,x2,y2}")

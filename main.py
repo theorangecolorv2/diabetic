@@ -34,4 +34,6 @@ def main():
 
 
 time.sleep(1)
+from missions.Duo_of_Death.run import run
+run()
 back()

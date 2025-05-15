@@ -8,12 +8,12 @@ from modules.find_image import exists, wait, find_image
 import keyboard
 
 
-def kill_all(wait_resp = False):
+def kill_all(wait_resp = False, web = False):
     if lock_all() == 0:
         return 1
     time.sleep(13)
     while count_targets() > 0:
-        shoot_all()
+        shoot_all(web=web)
         time.sleep(3)
         if wait_resp: time.sleep(7)
         if exists(GLOBAL_ASSETS + "nothing.png"):
@@ -38,12 +38,12 @@ def kill_frig1():
         lock_all("frig")
 
 
-def kill_frig():
+def kill_frig(web = False):
     if lock_all("frig") == 0:
         return 1
     time.sleep(13)
     while count_targets() > 0:
-        shoot_all()
+        shoot_all(web=web)
         time.sleep(3)
         if exists(GLOBAL_ASSETS + "nothing.png"):
             continue
@@ -66,16 +66,14 @@ def kill_bs():
             time.sleep(4)
 
 
-def shoot_all():
+def shoot_all(web = False):
     while count_targets() > 0:
         count = count_targets()
         pyautogui.press("n")
-        time.sleep(2.4)
+        time.sleep(2.2)
         pyautogui.press("1")
         time.sleep(0.1)
         pyautogui.press("f")
-        if not check_guns():
-            pyautogui.press("1")
         cycles = 0
         while count_targets(current_count=count) >= count:
             time.sleep(1)
@@ -83,6 +81,7 @@ def shoot_all():
             if cycles > 30 and not check_guns():
                 if count_targets() == 0: break
                 pyautogui.press("1")
+                time.sleep(0.2)
                 pyautogui.press("n")
                 time.sleep(0.1)
                 pyautogui.press("f")
