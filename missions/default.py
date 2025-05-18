@@ -47,12 +47,10 @@ def default(count, initial_gate = True, loot = True, close = False, first_gate_r
     if close and exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png", acc=0.92)
 
     if enemy_on_initial:
-        #if loot: deploy()
         turn_on()
         kill_all()
         pyautogui.press("2")
         time.sleep(0.2)
-        #if loot: scoop()
         time.sleep(0.2)
         pyautogui.press("m")
         time.sleep(0.2)

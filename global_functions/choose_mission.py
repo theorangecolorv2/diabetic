@@ -18,7 +18,9 @@ def make(run, ammo, tracking, optimal, universal):
     travel()
 
     time.sleep(0.2)
-    config(ammo=ammo, tracking=tracking, optimal=optimal, universal=universal)
+    config_ammo(ammo=ammo)
+    time.sleep(0.1)
+    config_track_comps(tracking=tracking, universal=universal, optimal=optimal)
     time.sleep(0.2)
 
     if exists(GLOBAL_ASSETS + "close.png", acc=0.92): lclick_on_image(GLOBAL_ASSETS + "close.png")
@@ -123,16 +125,12 @@ def choose_mission_and_run():
         make(run, ammo="fusion", tracking=1, optimal=1, universal=0)
 
 
-def config(ammo = "phased", tracking = 1, optimal = 1, universal = 0):
-    if universal + tracking + optimal > 2:
-        print("too much scripts, i have only 2 track comps")
-        return 0
+def config_ammo(ammo = "phased"):
     x1,y1,x2,y2 = find_image(GLOBAL_ASSETS + "module_static_img.png")
-    guns = (x1 + 280,y1-94,x2 + 280,y2-94) # calc it
-    track_comp = [(x1+295,y1-38,x2+295,y2-38), (x1+350,y1-38,x2+350,y2-38)]
+    guns = (x1 + 280,y1-94,x2 + 280,y2-94)
 
     rclick_coords(*guns)
-    time.sleep(0.5)
+    time.sleep(0.2)
     if exists(GLOBAL_ASSETS + "unload.png"):
         lclick_on_image(GLOBAL_ASSETS + "unload.png")
         time.sleep(0.5)
@@ -175,33 +173,7 @@ def config(ammo = "phased", tracking = 1, optimal = 1, universal = 0):
         rclick_coords(*guns)
         time.sleep(0.1)
         lclick_on_image(GLOBAL_ASSETS + "tetryon.png")
-
-    time.sleep(0.4)
-
-    for i in range(universal):
-        rclick_coords(*track_comp[i])
-        time.sleep(0.2)
-        if exists(GLOBAL_ASSETS + "unload.png"):
-            lclick_on_image(GLOBAL_ASSETS + "unload.png")
-        time.sleep(0.2)
-
-
-    # fix it (coords)
-    for i in range(universal, universal + tracking):
-        rclick_coords(*track_comp[i])
-        if exists(GLOBAL_ASSETS + "tracking.png"):
-            lclick_on_image(GLOBAL_ASSETS + "tracking.png")
-        time.sleep(0.2)
-
-    hover(GLOBAL_ASSETS + 'route.png') #
-    time.sleep(0.4)
-
-    for i in range(universal + tracking, universal + tracking + optimal):
-        rclick_coords(*track_comp[i])
-        if exists(GLOBAL_ASSETS + "optimal.png"):
-            lclick_on_image(GLOBAL_ASSETS + "optimal.png")
-        time.sleep(0.2)
-
+    time.sleep(0.1)
 
 
 def config_track_comps(universal=0, tracking=1, optimal=1):
