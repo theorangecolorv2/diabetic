@@ -126,6 +126,14 @@ def choose_mission_and_run():
 
 
 def config_ammo(ammo = "phased"):
+
+    if ammo in ['occult', 'mystic', 'tetryon', 'baryon', 'meson']:
+        if exists(GLOBAL_ASSETS + "drop_it.png"): lclick_on_image(GLOBAL_ASSETS + "cargo.png") # add imgs
+    else:
+        if not exists(GLOBAL_ASSETS + "drop_it.png"): lclick_on_image(GLOBAL_ASSETS + "cargo.png")  # add imgs
+
+    time.sleep(0.2)
+
     x1,y1,x2,y2 = find_image(GLOBAL_ASSETS + "module_static_img.png")
     guns = (x1 + 280,y1-94,x2 + 280,y2-94)
 
@@ -173,6 +181,8 @@ def config_ammo(ammo = "phased"):
         rclick_coords(*guns)
         time.sleep(0.1)
         lclick_on_image(GLOBAL_ASSETS + "tetryon.png")
+
+
     time.sleep(0.1)
 
 
